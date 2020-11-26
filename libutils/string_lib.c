@@ -62,7 +62,7 @@ size_t StringCopy(const char *const from, char *const to, const size_t buf_size)
     assert(from != NULL);
     assert(to != NULL);
     assert(from != to);
-    assert((signed)buf_size >= 0);
+    assert(buf_size >= 0);
 
     memset(to, 0, buf_size);
     strncpy(to, from, buf_size);
